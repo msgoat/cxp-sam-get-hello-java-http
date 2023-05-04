@@ -1,9 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  cxp-sam-get-hello-java
+  cxp-sam-get-hello-java-http
 
-  Sample SAM Template for cxp-sam-get-hello-java
+  Sample SAM Template for cxp-sam-get-hello-java-http
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -27,7 +27,7 @@ Resources:
             Path: /cxp-sam-get-hello-java/hello
             Method: get
     Metadata:
-      DockerTag: java11-maven-v1
+      DockerTag: java17-maven-v1
       DockerContext: ./HelloWorldFunction
       Dockerfile: Dockerfile
 

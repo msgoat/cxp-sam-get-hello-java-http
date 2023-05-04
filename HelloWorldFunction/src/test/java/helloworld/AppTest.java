@@ -16,7 +16,7 @@ public class AppTest {
     String content = result.getBody();
     assertNotNull(content);
     assertTrue(content.contains("\"message\""));
-    assertTrue(content.contains("\"hello world\""));
+    assertTrue(content.contains("\"hello world from cxp-sam-get-hello-java-http\""));
     assertTrue(content.contains("\"location\""));
   }
 }
