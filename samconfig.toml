@@ -8,7 +8,6 @@ s3_prefix = "cxp-sam-get-hello-java-http"
 region = "eu-west-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
-image_repository = "005913962162.dkr.ecr.eu-west-1.amazonaws.com/cxpserverless-dev-lambda"
-resolve_s3 = true
+resolve_s3 = false
 resolve_image_repos = false
 image_repositories = ["CxpSamGetHelloJavaFunction=005913962162.dkr.ecr.eu-west-1.amazonaws.com/cxpserverless-dev-lambda"]
